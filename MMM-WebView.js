@@ -29,7 +29,7 @@ Module.register('MMM-WebView', {
   getDom: function () {
     let wrapper = document.createElement('div');
     wrapper.id = 'mmm-webview-wrapper';
-    wrapper.innerHTML = `<webview id="${WEBVIEW_ID}" style="width: ${this.config.width}; height: ${this.config.height};" src="${this.config.url}"></webview>`;
+    wrapper.innerHTML = `<webview id="${WEBVIEW_ID}" style="opacity: 0.7; width: ${this.config.width}; height: ${this.config.height};" src="${this.config.url}"></webview>`;
     return wrapper;
   },
   notificationReceived: function (notification, payload, sender) {
